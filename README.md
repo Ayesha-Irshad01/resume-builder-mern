@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+📄 Resume Builder Web App
 
-## Getting Started
+A full-stack Resume Builder application that allows users to sign up, log in, choose resume templates, build resumes with live preview, and save them securely.
 
-First, run the development server:
+🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🔐 User Authentication (JWT-based login & signup)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🧩 Multiple Resume Templates (Classic, Modern, Creative)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+✍️ Resume Builder Form with Live Preview
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+💾 Save Resume to Database
 
-## Learn More
+🧠 Template-based Rendering
 
-To learn more about Next.js, take a look at the following resources:
+🔒 Protected Routes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+📱 Responsive UI (Tailwind CSS)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🛠 Tech Stack
 
-## Deploy on Vercel
+Frontend:
+Next.js (App Router), React, Tailwind CSS
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Backend:
+Next.js API Routes, MongoDB, Mongoose, JWT Authentication
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🧭 Application Flow
+
+User signs up / logs in
+
+Redirected to Template Selection page
+
+Selects a resume template
+
+Builds resume with live preview
+
+Resume saved to database with selected template
+
+📁 Project Structure
+src/
+ ├─ app/
+ │   ├─ login/
+ │   ├─ signup/
+ │   ├─ dashboard/
+ │   ├─ templates/
+ │   └─ api/
+ ├─ components/
+ │   └─ templates/
+ │       ├─ ClassicTemplate.jsx
+ │       ├─ ModernTemplate.jsx
+ │       └─ CreativeTemplate.jsx
+ ├─ lib/
+ │   └─ db.js
+ └─ models/
+     ├─ User.js
+     └─ Resume.js
+🔮 Future Improvements
+
+Resume animation previews
+
+Download resume as PDF
+
+Saved resumes dashboard
+
+Drag-and-drop sections
+
+More professional templates
+
+👩‍💻 Author
+
+Ayesha Irshad – MERN Stack Developer
